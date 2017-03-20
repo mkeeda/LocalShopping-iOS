@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.0.1)
+  - ObjectMapper (2.0.0)
+  - PageMenu (1.2.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - ObjectMapper (~> 2.0)
+  - PageMenu (from `https://github.com/orazz/PageMenu.git`)
+
+EXTERNAL SOURCES:
+  PageMenu:
+    :git: https://github.com/orazz/PageMenu.git
+
+CHECKOUT OPTIONS:
+  PageMenu:
+    :commit: 4c4052e455d10e82fed6d251df091b5674fe91c2
+    :git: https://github.com/orazz/PageMenu.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+
+PODFILE CHECKSUM: 7d212b469c7678cfce7b48a266dbea33fa1c03fe
+
+COCOAPODS: 1.0.1

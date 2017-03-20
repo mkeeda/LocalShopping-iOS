@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jsq-gT-pmR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--トップ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TopViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="トップ" id="UKl-QX-P8j"/>
+                    <connections>
+                        <segue destination="C74-JJ-mHU" kind="show" identifier="orderStatus" id="3kZ-2R-DYo"/>
+                        <segue destination="J9W-DK-yw1" kind="show" identifier="selectSeller" id="ha0-8q-U8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="241"/>
+        </scene>
+        <!--商店選択-->
+        <scene sceneID="6rV-qd-ckF">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="J9W-DK-yw1" customClass="SelectSellerViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="商店選択" id="AyF-pJ-yAL"/>
+                    <connections>
+                        <segue destination="Agn-I4-GgL" kind="show" identifier="searchItems" id="NH5-Oc-wSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgh-RV-WwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="-111"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="32X-0f-JCF">
+            <objects>
+                <viewController id="jsq-gT-pmR" customClass="FirstViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="V9Q-zD-6ei" kind="presentation" identifier="goToStartView" id="Zvd-mR-A14"/>
+                        <segue destination="m2m-hD-3lz" kind="presentation" identifier="userRegistration" id="C7t-ed-BiP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgZ-5a-8Cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445" y="241"/>
+        </scene>
+        <!--UserRegistration-->
+        <scene sceneID="cOD-M7-lbF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserRegistration" id="m2m-hD-3lz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7r-1E-LFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446" y="717"/>
+        </scene>
+        <!--商品リスト-->
+        <scene sceneID="SHf-he-D1Z">
+            <objects>
+                <viewController id="Agn-I4-GgL" customClass="ItemCategoryPageMenuViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zPm-gY-4fk"/>
+                        <viewControllerLayoutGuide type="bottom" id="oga-yG-DOX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HBv-3e-bgw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLa-gE-XUS">
+                                <rect key="frame" x="-4" y="617" width="383" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzI-qc-XFJ">
+                                        <rect key="frame" x="64" y="7" width="40" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合計" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5P-Wv-H0L">
+                                        <rect key="frame" x="10" y="7" width="49" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28v-rt-hK4">
+                                        <rect key="frame" x="283" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="OJJ-u7-I9v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="次へ"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3O3-0l-CjD"/>
+                                    <constraint firstItem="u5P-Wv-H0L" firstAttribute="top" secondItem="KLa-gE-XUS" secondAttribute="top" constant="7" id="Rlg-DO-jxj"/>
+                                    <constraint firstAttribute="bottom" secondItem="28v-rt-hK4" secondAttribute="bottom" id="S6v-HS-szK"/>
+                                    <constraint firstItem="nzI-qc-XFJ" firstAttribute="top" secondItem="KLa-gE-XUS" secondAttribute="top" constant="7" id="WeD-59-Cxq"/>
+                                    <constraint firstAttribute="bottom" secondItem="nzI-qc-XFJ" secondAttribute="bottom" constant="7" id="X64-Q2-1Xd"/>
+                                    <constraint firstAttribute="bottom" secondItem="u5P-Wv-H0L" secondAttribute="bottom" constant="7" id="f3f-dZ-spG"/>
+                                    <constraint firstAttribute="trailing" secondItem="28v-rt-hK4" secondAttribute="trailing" id="feK-eZ-ERc"/>
+                                    <constraint firstItem="nzI-qc-XFJ" firstAttribute="leading" secondItem="u5P-Wv-H0L" secondAttribute="trailing" constant="5" id="ihE-xH-eas"/>
+                                    <constraint firstAttribute="height" constant="50" id="sah-jf-x0s"/>
+                                    <constraint firstItem="u5P-Wv-H0L" firstAttribute="leading" secondItem="KLa-gE-XUS" secondAttribute="leading" constant="10" id="sjQ-cr-RYI"/>
+                                    <constraint firstAttribute="trailing" secondItem="nzI-qc-XFJ" secondAttribute="trailing" constant="35" id="tg3-sc-37I"/>
+                                    <constraint firstItem="28v-rt-hK4" firstAttribute="top" secondItem="KLa-gE-XUS" secondAttribute="top" id="u6y-ur-RHS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tg3-sc-37I"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KLa-gE-XUS" firstAttribute="leading" secondItem="HBv-3e-bgw" secondAttribute="leadingMargin" constant="-20" id="Zth-2L-VJU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KLa-gE-XUS" secondAttribute="trailing" constant="-20" id="oJ5-cf-FWF"/>
+                            <constraint firstItem="oga-yG-DOX" firstAttribute="top" secondItem="KLa-gE-XUS" secondAttribute="bottom" id="qwd-uf-hWU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="商品リスト" id="voR-7X-RZM"/>
+                    <connections>
+                        <outlet property="orderButton" destination="28v-rt-hK4" id="dwE-rZ-Wpz"/>
+                        <outlet property="totalLabel" destination="nzI-qc-XFJ" id="eII-Xv-AcM"/>
+                        <outlet property="totalView" destination="KLa-gE-XUS" id="fGC-Zi-hfu"/>
+                        <segue destination="ai4-Ie-lmx" kind="show" identifier="orderCheck" id="WbM-CM-AkV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOX-dc-qsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669" y="-111"/>
+        </scene>
+        <!--注文の確認-->
+        <scene sceneID="XKx-XQ-fVR">
+            <objects>
+                <viewController id="ai4-Ie-lmx" customClass="OrderCheckViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="注文の確認" id="TQR-zH-Fta"/>
+                    <connections>
+                        <segue destination="hZ9-yT-Uoe" kind="show" identifier="orderComplete" id="7qg-Ur-AMu"/>
+                        <segue destination="XmK-PP-3kg" kind="unwind" identifier="goBackToItemListView" unwindAction="unwindAction:" id="MKb-wd-beU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAY-cR-iSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XmK-PP-3kg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3392" y="-111"/>
+        </scene>
+        <!--Order Complete View Controller-->
+        <scene sceneID="pzb-bm-uWw">
+            <objects>
+                <viewController id="hZ9-yT-Uoe" customClass="OrderCompleteViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgS-QT-1gW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4112" y="-111"/>
+        </scene>
+        <!--注文詳細-->
+        <scene sceneID="SmX-6s-txZ">
+            <objects>
+                <viewController id="8ds-su-56M" customClass="DetailedOrderInfoViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="注文詳細" id="1zP-mg-4iu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQG-7D-aGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669" y="760"/>
+        </scene>
+        <!--注文履歴-->
+        <scene sceneID="nve-y1-z4W">
+            <objects>
+                <viewController id="C74-JJ-mHU" customClass="OrderStatusViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="注文履歴" id="uBX-jl-w30"/>
+                    <connections>
+                        <segue destination="8ds-su-56M" kind="show" identifier="toDetailedOrderInfo" id="Sle-fU-TQp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MvL-eZ-jvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="760"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SfX-Sd-HJC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V9Q-zD-6ei" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sTr-Ie-5fS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EF1-zD-bhy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRh-dS-goK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="241"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Robosuke2UITests {
+  umbrella header "Pods-Robosuke2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderCompleteViewController" customModule="Robosuke2" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご注文 ありがとうございます" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHh-of-Z48">
+                    <rect key="frame" x="28.5" y="150" width="263.5" height="63"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商店からの連絡を お待ち下さい" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiX-xK-uoP">
+                    <rect key="frame" x="54.5" y="253" width="211" height="63"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-Fw-Wps">
+                    <rect key="frame" x="87" y="386" width="146" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="トップへ戻る"/>
+                    <connections>
+                        <action selector="goBackToTopView:" destination="-1" eventType="touchUpInside" id="MAL-Rz-ljE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zHh-of-Z48" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HkQ-u7-lBv"/>
+                <constraint firstItem="KiX-xK-uoP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xvt-5r-pUN"/>
+                <constraint firstItem="zHh-of-Z48" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="abu-Iu-RZH"/>
+                <constraint firstItem="Vlt-Fw-Wps" firstAttribute="top" secondItem="KiX-xK-uoP" secondAttribute="bottom" constant="70" id="meM-tL-pjR"/>
+                <constraint firstItem="KiX-xK-uoP" firstAttribute="top" secondItem="zHh-of-Z48" secondAttribute="bottom" constant="40" id="piD-qh-Moy"/>
+                <constraint firstItem="Vlt-Fw-Wps" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sKn-QB-edI"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="371"/>
+        </view>
+    </objects>
+</document>

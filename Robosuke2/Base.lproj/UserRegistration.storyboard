@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8bM-i8-cuw">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9Uc-8G-zat">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8bM-i8-cuw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="re6-B9-pGs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZSR-5v-09g" kind="relationship" relationship="rootViewController" id="O02-2B-xX0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsQ-Gw-WmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186.40000000000001" y="83.208395802098963"/>
+        </scene>
+        <!--新規登録-->
+        <scene sceneID="RGS-Xd-sYj">
+            <objects>
+                <tableViewController id="ZSR-5v-09g" customClass="CreateUserViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="XWP-c2-6rs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jCt-bv-SeR">
+                            <rect key="frame" x="0.0" y="261.5" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="次へ"/>
+                            <connections>
+                                <action selector="onClickNextButton:" destination="ZSR-5v-09g" eventType="touchUpInside" id="TRy-jL-j2B"/>
+                            </connections>
+                        </button>
+                        <sections>
+                            <tableViewSection headerTitle="名前" id="0bN-8g-5le">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="g6P-es-ttO">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g6P-es-ttO" id="PsR-OW-6vO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="姓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vES-WA-o3W">
+                                                    <rect key="frame" x="20" y="0.0" width="280" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="vES-WA-o3W" secondAttribute="bottom" id="P1f-Z2-gXb"/>
+                                                <constraint firstItem="vES-WA-o3W" firstAttribute="top" secondItem="PsR-OW-6vO" secondAttribute="top" id="hwU-sS-rcz"/>
+                                                <constraint firstAttribute="trailing" secondItem="vES-WA-o3W" secondAttribute="trailing" constant="20" id="iAO-Uy-Uiv"/>
+                                                <constraint firstItem="vES-WA-o3W" firstAttribute="leading" secondItem="PsR-OW-6vO" secondAttribute="leading" constant="20" id="qzA-Bb-1hw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sQQ-21-vRm">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sQQ-21-vRm" id="DKc-0s-Sb1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="isd-jU-3Ij">
+                                                    <rect key="frame" x="20" y="0.0" width="280" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="isd-jU-3Ij" firstAttribute="leading" secondItem="DKc-0s-Sb1" secondAttribute="leading" constant="20" id="D4R-dr-ark"/>
+                                                <constraint firstAttribute="trailing" secondItem="isd-jU-3Ij" secondAttribute="trailing" constant="20" id="PWC-kv-HeC"/>
+                                                <constraint firstItem="isd-jU-3Ij" firstAttribute="top" secondItem="DKc-0s-Sb1" secondAttribute="top" id="qvx-Et-u6A"/>
+                                                <constraint firstAttribute="bottom" secondItem="isd-jU-3Ij" secondAttribute="bottom" id="wGu-gt-0mw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="メールアドレス" id="pop-3S-oC9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eZ9-be-dKZ">
+                                        <rect key="frame" x="0.0" y="200" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eZ9-be-dKZ" id="GIR-BR-0jG">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="例: hogehoge@naist.jp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AF5-9R-cqP">
+                                                    <rect key="frame" x="20" y="0.0" width="280" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="AF5-9R-cqP" secondAttribute="bottom" id="1Vx-Ir-h9B"/>
+                                                <constraint firstItem="AF5-9R-cqP" firstAttribute="top" secondItem="GIR-BR-0jG" secondAttribute="top" id="ATT-hp-Prg"/>
+                                                <constraint firstAttribute="trailing" secondItem="AF5-9R-cqP" secondAttribute="trailing" constant="20" id="cqb-LZ-c0I"/>
+                                                <constraint firstItem="AF5-9R-cqP" firstAttribute="leading" secondItem="GIR-BR-0jG" secondAttribute="leading" constant="20" id="nba-fX-wiG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ZSR-5v-09g" id="7eb-OH-uMI"/>
+                            <outlet property="delegate" destination="ZSR-5v-09g" id="wmD-w6-o1P"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="新規登録" id="aD3-BW-ZhI"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="AF5-9R-cqP" id="mtf-FK-3nn"/>
+                        <outlet property="firstNameTextField" destination="isd-jU-3Ij" id="yOZ-hn-8Y0"/>
+                        <outlet property="lastNameTextField" destination="vES-WA-o3W" id="DqE-UF-6Za"/>
+                        <segue destination="OVh-Df-ZVe" kind="presentation" identifier="gotoInputUserProfile" id="gkv-rU-lGT"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGZ-LS-l53" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="80"/>
+        </scene>
+        <!--利用者情報の登録-->
+        <scene sceneID="dV7-Nf-8DZ">
+            <objects>
+                <tableViewController id="etr-8d-hJJ" customClass="InputUserProfileViewController" customModule="Robosuke2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="QSD-mM-GH0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WVM-Fl-0Nm">
+                            <rect key="frame" x="0.0" y="261.5" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="次へ"/>
+                            <connections>
+                                <action selector="onClickNextButton:" destination="etr-8d-hJJ" eventType="touchUpInside" id="zm7-en-xZZ"/>
+                            </connections>
+                        </button>
+                        <sections>
+                            <tableViewSection headerTitle="所在地" id="AT2-y5-kYQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="b8O-RK-fbh">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b8O-RK-fbh" id="gDd-9j-9nY">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="郵便番号 (例: 6300101)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dbd-6i-9xY">
+                                                    <rect key="frame" x="20" y="0.0" width="280" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Dbd-6i-9xY" firstAttribute="leading" secondItem="gDd-9j-9nY" secondAttribute="leading" constant="20" id="Sz5-M4-68y"/>
+                                                <constraint firstItem="Dbd-6i-9xY" firstAttribute="top" secondItem="gDd-9j-9nY" secondAttribute="top" id="Yye-q4-nlJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dbd-6i-9xY" secondAttribute="trailing" constant="20" id="dbh-94-4ZJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="Dbd-6i-9xY" secondAttribute="bottom" id="gha-LE-Gtf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FAC-xT-XXB">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FAC-xT-XXB" id="XyI-7F-hXh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="住所 (例: 奈良県生駒市高山町8916-5)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="58B-TN-rrG">
+                                                    <rect key="frame" x="20" y="0.0" width="280" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="58B-TN-rrG" firstAttribute="leading" secondItem="XyI-7F-hXh" secondAttribute="leading" constant="20" id="g27-xV-Eqi"/>
+                                                <constraint firstAttribute="bottom" secondItem="58B-TN-rrG" secondAttribute="bottom" id="gcq-Wk-Kr0"/>
+                                                <constraint firstItem="58B-TN-rrG" firstAttribute="top" secondItem="XyI-7F-hXh" secondAttribute="top" id="gfj-1n-VDI"/>
+                                                <constraint firstAttribute="trailing" secondItem="58B-TN-rrG" secondAttribute="trailing" constant="20" id="oGa-5p-Bie"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="電話番号" id="mOC-KF-TfW">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hxS-PK-1YP">
+                                        <rect key="frame" x="0.0" y="200" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hxS-PK-1YP" id="c9O-W1-sGT">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="例: 0743123456" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUN-gP-MJf">
+                                                    <rect key="frame" x="20" y="0.0" width="280" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jUN-gP-MJf" secondAttribute="trailing" constant="20" id="0ds-VJ-YDX"/>
+                                                <constraint firstItem="jUN-gP-MJf" firstAttribute="top" secondItem="c9O-W1-sGT" secondAttribute="top" id="Ndq-G4-PwB"/>
+                                                <constraint firstAttribute="bottom" secondItem="jUN-gP-MJf" secondAttribute="bottom" id="Qq5-yr-kEv"/>
+                                                <constraint firstItem="jUN-gP-MJf" firstAttribute="leading" secondItem="c9O-W1-sGT" secondAttribute="leading" constant="20" id="iy9-H1-2u1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="etr-8d-hJJ" id="Pcq-Ek-9hu"/>
+                            <outlet property="delegate" destination="etr-8d-hJJ" id="8mS-7w-5bd"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="利用者情報の登録" id="cbI-dD-seQ"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="58B-TN-rrG" id="Cju-PI-2QE"/>
+                        <outlet property="phoneNumberTextField" destination="jUN-gP-MJf" id="JEB-Bb-Dzb"/>
+                        <outlet property="zipcodeTextField" destination="Dbd-6i-9xY" id="6K6-wW-CWU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6r-ra-MIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cw0-6P-PAE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OVh-Df-ZVe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="srf-sj-Iy3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="etr-8d-hJJ" kind="relationship" relationship="rootViewController" id="jsE-yW-bRi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqY-xo-fbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561.875" y="80.281690140845072"/>
+        </scene>
+    </scenes>
+</document>
